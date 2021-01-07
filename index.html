@@ -1,73 +1,105 @@
+<!-- https://validator.w3.org/: Document checking completed. No errors or warnings to show.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <!--<script src="https://kit.fontawesome.com/f44d45e2ac.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/brands.css" integrity="sha384-yZSrIKdp94pouX5Mo4J2MnZUIAuHlZhe3H2c4FRXeUcHvI2k0zNtPrBu8p3bjun5" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/fontawesome.css" integrity="sha384-syoT0d9IcMjfxtHzbJUlNIuL19vD9XQAdOzftC+llPALVSZdxUpVXE0niLOiw/mn" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Podcast</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <img src="images/logo.svg" alt="Logo página" class="logo"/>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="#episodes">EPISODIOS</a></li>
+                    <li><a href="#where-we-come-from">NOSOTROS</a></li>
+                    <li><a href="#guesses">ENTREVISTAS</a></li>
+                    <li><a href="#topics">TÓPICOS</a></li>
+                </ul>
+            </div>
+        </nav>    
+    </header>
     <main>
-        <section class="overview">
-            <h1 class="first-word-size">Hello</h1>
-            <h1 class="second-word-size-align-decoration">world</h1>
-            <h1 class="third-word-size">pale blue dot</h1>
-            <h1 class="dot-size">.</h1>
-            <p>Un podcast que explora el mundo de la programación. Nuevos episorios, todos los jueves cada 15 días.</p>
-            <a href="">CONOCÉ MÁS</a>    
+        <section id="overview" class="overview">
+            <div class="overview-container">
+                <h1 class="first-word-size">Hello</h1>
+                <h1 class="second-word-size-align-decoration">world</h1>
+                <h1 class="third-word-size">pale blue dot</h1>
+                <h1 class="dot-size">.</h1>
+            </div>    
+            <p class="short-text">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="large-text">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <a href="https://www.acamica.com">CONOCÉ MÁS</a>    
         </section>
-        <section class="episodes">
-            <div class="episodes-background"></div>
+        <section id="episodes" class="episodes">
+            <svg class="background-polygon-effect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <polygon fill="white" points="0,10 100,0 0,0"/>
+            </svg>
             <h1 class="title-size">Episodios</h1>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe>
+            </div>
+            <svg class="background-polygon-effect-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <polygon fill="white" points="0,10 100,0 100,100"/>
+            </svg>
         </section>
-        <section class="where-we-come-from">
-            <img src="images/phone.png" alt="celular">
+        <section id="where-we-come-from" class="where-we-come-from">
+            <img src="images/phone.png" alt="Celular cuya pantalla ilustra noticia de una mujer en el ejercicio de la programación">
             <h1>De dónde venimos</h1>
             <p>Our posturings, our imagined self-importance, the desilusion that we have some priviliged position in the Universe, are challenged by this point of pale light.<br><br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>            
         </section>
-        <section class="guesses">
-            <h1>Invitadas/os estelares</h1>  
-            <img src="images/grace-hopper.png" alt="">
-            <img src="images/Katie-Bouman.png" alt="">
-            <img src="images/Margaret_Hamilton.png" alt="">
-            <img src="images/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="">
-            <img src="images/Computer_operators_with_an_Eniac_—_the_world’s_first programmable_general-purpose_computer.png" alt="">
-            <img src="images/susan-kare.png" alt="">    
+        <section id="guesses" class="guesses">
+            <h1>Invitadas/os estelares</h1>
+            <div class="photo-collection">
+                <img src="images/grace-hopper.png" alt="Grace Hopper junto a infraestructura de IBM.">
+                <img src="images/Katie-Bouman.png" alt="Katie Bouman de brazos abierto junto a equipos informáticos.">
+                <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton ordenando archivo.">
+                <img src="images/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="Mujeres manipulando equipos informáticos en los años 50.">
+                <img src="images/Computer_operators_with_an_Eniac_—_the_world’s_first_programmable_general-purpose_computer.png" alt="Mujeres operando un el primer computador programable de propósito general del mundo">
+                <img src="images/susan-kare.png" alt="Susan Kare recostada en su silla de escritorio."> 
+            </div>     
         </section>
-        <section class="topics">
+        <section id="topics" class="topics">
             <h1>Algunos de nuestros temas</h1>
-            <img src="images/icon1.svg" alt="">
-            <h2 class="space-between1">Trabajo remoto</h2>
-            <img src="images/icon2.svg" alt="">
-            <h2 class="space-between2">Repensando la programación</h2>          
-            <img src="images/icon3.svg" alt="">
-            <h2 class="space-between2">Bases del código</h2>
-            <img src="images/icon4.svg" alt="">
-            <h2 class="space-between3">Seguridad informática</h2>            
+            <div class="topics-container">
+                <img src="images/icon1.svg" alt="Ícono del tema de  trabajo remoto">
+                <h2 class="space-between1">Trabajo remoto</h2>
+                <img src="images/icon2.svg" alt="Ícono del tema del tema repensando la programación.">
+                <h2 class="space-between2">Repensando la programación</h2>          
+                <img src="images/icon3.svg" alt="Ícono del tema bases del código">
+                <h2 class="space-between2">Bases del código</h2>
+                <img src="images/icon4.svg" alt="Ícono del tema seguridad informática.">
+                <h2 class="space-between3">Seguridad informática</h2>
+        </div>            
         </section>
         <section class="updates">
-            <div class="updates-background"></div>
+            <svg class="background-polygon-effect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <polygon fill="white" points="0,10 100,0 0,0"/>
+            </svg>
             <h1>¿Querés las últimas novedades?</h1>
-            <a href="">ESCUCHÁ LOS EPISODIOS</a>
+            <a href="https://www.acamica.com">ESCUCHÁ LOS EPISODIOS</a>
         </section>
     </main>
     <footer>
         <p>© 2019- Hello blue pale dot</p>
         <div>
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
+            <a href="https://www.facebook.com/Acamica.org"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/acamica/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Acamica_com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/rdj47/"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me/makerdaoOfficial"><i class="fab fa-telegram"></i></a>
     </div>
     </footer>
 </body>
